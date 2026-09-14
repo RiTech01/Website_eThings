@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   const missing = fields.filter((field) => !String(lead[field] || '').trim());
   if (missing.length) return res.status(400).json({ message: 'Please complete all required fields.', fields: missing });
   if (!/^\S+@\S+\.\S+$/.test(lead.email)) return res.status(400).json({ message: 'Enter a valid work email address.', fields: ['email'] });
-  const payload = { ...lead, landingPage: '/hire-developers/', timestamp: new Date().toISOString() };
+  const payload = { ...lead, landingPage: String(lead.landingPage || '/hire-developers/'), timestamp: new Date().toISOString() };
   // Wire this server-only boundary to the existing Ething email/CRM service before launch.
   // Never expose email credentials in browser code.
   if (process.env.LEAD_DELIVERY_WEBHOOK_URL) {
