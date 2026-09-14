@@ -7,3 +7,7 @@ body{font-family:Aptos,"Avenir Next","Segoe UI",sans-serif;letter-spacing:.005em
 @media(max-width:800px){.hero{background-position:64% center}.dark{background-image:linear-gradient(180deg,rgba(7,26,44,.96),rgba(7,26,44,.86)),url('/developer-portrait.png');background-position:center}.logo::before{width:22px;height:22px}}
 @media(min-width:801px){#lead-form{padding-top:55px}}
 
+/* Tighter paid-search layout: keeps content and conversion cues visible without long empty runs. */
+.paid-page main>section:not(.hero){padding-top:62px;padding-bottom:62px}.paid-page .hero{padding-top:58px;padding-bottom:58px}.paid-page .cards,.paid-page .profiles,.paid-page .models{margin-top:27px}.paid-page .stack>div,.paid-page .faq{margin-top:25px}
+@media(max-width:800px){.paid-page main>section:not(.hero){padding-top:48px;padding-bottom:48px}.paid-page .hero{padding-top:44px;padding-bottom:48px}.paid-page .cards,.paid-page .profiles,.paid-page .models{margin-top:22px}}
+
