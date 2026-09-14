@@ -1,7 +1,9 @@
 /* Humanist typography and media upgrades for the paid-search experience. */
 body{font-family:Aptos,"Avenir Next","Segoe UI",sans-serif;letter-spacing:.005em}
+.eyebrow{font-family:Georgia,"Times New Roman",serif;font-size:.82rem;letter-spacing:.055em;font-weight:700}
 .logo{display:inline-flex;align-items:center;gap:7px;font-weight:800;letter-spacing:-1.4px}.logo::before{content:"ET";display:grid;place-items:center;width:25px;height:25px;border-radius:6px;background:var(--teal);color:var(--navy);font-size:10px;font-weight:950;letter-spacing:-1px}.logo span{font-size:1.35em}
 .hero{background-image:linear-gradient(90deg,rgba(3,17,29,.97) 0%,rgba(3,17,29,.84) 47%,rgba(3,17,29,.26) 100%),url('/engineering-team-hero.png');background-size:cover;background-position:center}
 .dark{background-image:linear-gradient(90deg,rgba(7,26,44,.98) 0%,rgba(7,26,44,.85) 52%,rgba(7,26,44,.4) 100%),url('/developer-portrait.png');background-size:cover;background-position:right center;background-repeat:no-repeat}
 @media(max-width:800px){.hero{background-position:64% center}.dark{background-image:linear-gradient(180deg,rgba(7,26,44,.96),rgba(7,26,44,.86)),url('/developer-portrait.png');background-position:center}.logo::before{width:22px;height:22px}}
+@media(min-width:801px){#lead-form{padding-top:55px}}
 
